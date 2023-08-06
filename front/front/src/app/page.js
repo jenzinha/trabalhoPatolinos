@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 
 export default async function Home() {
- const req = await fetch("http://localhost:3004/produtos", {
+ const req = await fetch("https://trabalho-patolinos-gjki-4mk5csv05-jenzinha.vercel.app", {
   cache: "no-cache"
 })
  const produtos = await req.json();
