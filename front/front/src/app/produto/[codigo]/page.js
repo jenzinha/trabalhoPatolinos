@@ -10,7 +10,7 @@ export default async function Produto({ params }) {
 
     const codigoJson = JSON.stringify(codigo);
 
-    const req = await fetch("http://localhost:3004/produtos", {
+    const req = await fetch("http://localhost:3001/produtos", {
         method: "POST",
         cache: "no-cache",
         headers: { 'content-type': 'application/json' },
